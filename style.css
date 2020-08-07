@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#form {
+  font-family: "Chilanka", cursive;
+  margin: 2rem 0;
+}
+#form .container form {
+  padding: 1rem 2.5rem;
+}
+.card .card-image .card-title {
+  color: #333;
+}
+.card .card-content {
+  padding: 5px 24px;
+}
+
+.card .card-content p {
+  font-family: "Chilanka", cursive;
+  font-size: 25px;
+  padding: 10px 0.5rem;
+  border-bottom: 1px dotted #ccc;
+}
+
+/* Alert classes */
+.success {
+  color: white;
+  background-color: green;
+}
+.danger {
+  color: white;
+  background-color: red;
+}
+
+.input-field > label {
+  color: #333;
+}
+
+.loader {
+  position: absolute;
+  top: 80%;
+  left: 47%;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/site.webmanifest" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ticket Holder</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="cyan darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a style="width: 16rem;" class="brand-logo">
+              <i class="material-icons">confirmation_number</i>TicketHolder
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- form section -->
+    <section id="form">
+      <div class="container">
+        <div class="row">
+          <form id="form" class="card col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="from" type="text" class="validate" />
+                <label for="from"><strong>From:-</strong></label>
+              </div>
+              <div class="input-field col s6">
+                <input id="to" type="text" class="validate" />
+                <label for="to"><strong>To:-</strong></label>
+              </div>
+              <div class="input-field col s6">
+                <input id="date" type="text" class="datepicker" />
+                <label for="date"><strong>Date</strong></label>
+              </div>
+              <div class="input-field col s6">
+                <input id="seat" type="number" class="validate" />
+                <label for="seat"><strong>Seat Number:-</strong></label>
+              </div>
+              <div class="input-field col s12">
+                <select id="travel_medium">
+                  <option value="" disabled selected>Choose</option>
+                  <option value="AirLine">AirLine</option>
+                  <option value="Railway">Railway</option>
+                  <option value="Bus">Bus</option>
+                </select>
+                <label>Travel Type:- </label>
+              </div>
+              <div class="input-field col s12">
+                <button
+                  id="submit"
+                  class="btn btn-floating btn-large waves-effect waves-light teal accent-4"
+                  type="submit"
+                >
+                  <i class="material-icons">add</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Movie Details Cards -->
+    <section id="movie">
+      <div class="container">
+        <div id="plan-list" class="row"></div>
+      </div>
+    </section>
+
+    <!-- Preloader -->
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-cyan-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <!-- Materialize css -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custome js -->
+    <script src="./app.js"></script>
+    <!-- Main js -->
+    <script src="./main.js"></script>
+  </body>
+</html>
